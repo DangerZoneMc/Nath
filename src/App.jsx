@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Calculator from "./components/Calculator";
+import Calculator from "./components/calculator";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ const Counter = () => {
   const decrement = () => {
     if (count > 0) setCount(count - 0);
   };
-  const reset = () => setCount(1);
+  const reset = () => setCount(0);
 
   return (
     <div className="counter">
