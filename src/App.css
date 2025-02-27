@@ -1,36 +1,50 @@
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+.container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
-  background-color: #ff3f3fb9;
+  min-height: 100vh;
+  gap: 20px; /* Adds spacing between counter and calculator */
 }
 
-/* Center the counter at the top */
-.counter-container {
-  text-align: center;
-  margin-top: 10px;
-  padding: 20px;
-  background-color: #fed8d8;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  padding: 15px;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-button {
+.count-display {
+  font-size: 2.5rem; /* Increase size */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 10px 15px;
   margin: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+  background-color: #646cff;
+  color: white;
   border: none;
   border-radius: 5px;
-  background-color: #007BFF;
-  color: white;
-  transition: background-color 0.3s;
+  cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+.btn:hover {
+  background-color: #535bf2;
 }
+
+.reset {
+  background-color: #ff4d4d;
+}
+
+.reset:hover {
+  background-color: #e04a4a;
+}
+
+
